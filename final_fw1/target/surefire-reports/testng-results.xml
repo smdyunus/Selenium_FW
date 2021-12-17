@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="43642" started-at="2021-12-18T00:41:16 IST" finished-at="2021-12-18T00:41:59 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="43642" started-at="2021-12-18T00:41:16 IST" finished-at="2021-12-18T00:41:59 IST">
+      <class name="TestCases.AmazonHomeTest">
+        <test-method status="PASS" signature="HomeScreen()[pri:0, instance:TestCases.AmazonHomeTest@47ef968d]" name="HomeScreen" duration-ms="3" started-at="2021-12-18T00:41:16 IST" finished-at="2021-12-18T00:41:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeScreen -->
+      </class> <!-- TestCases.AmazonHomeTest -->
+      <class name="TestCases.Page1Test">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.Page1Test@6ebc05a6]" name="setup" is-config="true" duration-ms="6135" started-at="2021-12-18T00:41:16 IST" finished-at="2021-12-18T00:41:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="ValidLogin()[pri:1, instance:TestCases.Page1Test@6ebc05a6]" name="ValidLogin" duration-ms="5454" started-at="2021-12-18T00:41:22 IST" finished-at="2021-12-18T00:41:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.Page1Test@6ebc05a6]" name="close" is-config="true" duration-ms="367" started-at="2021-12-18T00:41:27 IST" finished-at="2021-12-18T00:41:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.Page1Test@6ebc05a6]" name="setup" is-config="true" duration-ms="5462" started-at="2021-12-18T00:41:28 IST" finished-at="2021-12-18T00:41:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="invalidLogin()[pri:2, instance:TestCases.Page1Test@6ebc05a6]" name="invalidLogin" duration-ms="3970" started-at="2021-12-18T00:41:33 IST" finished-at="2021-12-18T00:41:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.Page1Test@6ebc05a6]" name="close" is-config="true" duration-ms="413" started-at="2021-12-18T00:41:37 IST" finished-at="2021-12-18T00:41:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.Page1Test@6ebc05a6]" name="setup" is-config="true" duration-ms="7616" started-at="2021-12-18T00:41:38 IST" finished-at="2021-12-18T00:41:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="invalidMobile()[pri:3, instance:TestCases.Page1Test@6ebc05a6]" name="invalidMobile" duration-ms="4479" started-at="2021-12-18T00:41:45 IST" finished-at="2021-12-18T00:41:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidMobile -->
+        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.Page1Test@6ebc05a6]" name="close" is-config="true" duration-ms="487" started-at="2021-12-18T00:41:50 IST" finished-at="2021-12-18T00:41:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.Page1Test@6ebc05a6]" name="setup" is-config="true" duration-ms="6579" started-at="2021-12-18T00:41:50 IST" finished-at="2021-12-18T00:41:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="withoutpwd()[pri:4, instance:TestCases.Page1Test@6ebc05a6]" name="withoutpwd" duration-ms="2177" started-at="2021-12-18T00:41:57 IST" finished-at="2021-12-18T00:41:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withoutpwd -->
+        <test-method status="PASS" signature="close()[pri:0, instance:TestCases.Page1Test@6ebc05a6]" name="close" is-config="true" duration-ms="464" started-at="2021-12-18T00:41:59 IST" finished-at="2021-12-18T00:41:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestCases.Page1Test -->
+      <class name="TestCases.OrderTest">
+        <test-method status="PASS" signature="orderplace()[pri:0, instance:TestCases.OrderTest@1c3a4799]" name="orderplace" duration-ms="1" started-at="2021-12-18T00:41:59 IST" finished-at="2021-12-18T00:41:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderplace -->
+      </class> <!-- TestCases.OrderTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

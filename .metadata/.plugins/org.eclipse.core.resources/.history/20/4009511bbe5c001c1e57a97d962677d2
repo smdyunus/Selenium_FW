@@ -1,0 +1,48 @@
+package TestCases;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import Pages.AmazonLogin;
+
+public class AmazonLoginTest {
+	
+	WebDriver driver;
+	AmazonLogin Al;
+	
+	@BeforeMethod
+    public void setUp()
+    {   
+    	System.setProperty("webdriver.chrome.driver","drivers/chromedriver");		
+        driver=new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        System.out.println("The setup process is completed");
+        String baseUrl = "https://www.amazon.in/";
+        driver.get(baseUrl);
+    }
+	
+	@Test //Main method
+	public void validLogin() {
+		
+		Al.loginToAmazon("9620301980", "Yunus@5818");
+		
+	}
+	
+	
+	@AfterMethod
+	public void closeTest() {
+		
+		driver.close();
+	}
+	
+	
+
+	
+
+}

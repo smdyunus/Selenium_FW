@@ -1,0 +1,28 @@
+package temp;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
+
+public class firsttestngfile {
+	
+    public String baseUrl = "http://demo.guru99.com/test/newtours/";
+    String driverPath = "drivers/chromedriver";
+    public WebDriver driver ; 
+     
+  @Test
+  public void verifyHomepageTitle() {
+       
+      System.out.println("launching chrome browser"); 
+      System.setProperty("webdriver.chrome.driver", driverPath);
+      driver = new ChromeDriver();
+      driver.get(baseUrl);
+      String expectedTitle = "Welcome: Mercury Tours";
+      String actualTitle = driver.getTitle();
+      SoftAssert s = new SoftAssert();
+      s.assertEquals(actualTitle, expectedTitle);
+     // Assert.assertEquals(actualTitle, expectedTitle);
+      driver.close();
+  }
+}

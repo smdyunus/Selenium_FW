@@ -1,0 +1,10 @@
+ @Test(priority = 4)
+        public void withoutpwd() {
+                Al = new AmazonLoginPage(driver);
+                Al.loginToAmazon("9620399980", "");
+        }
+
+        @AfterMethod
+        public void close() {
+                driver.close();
+        }

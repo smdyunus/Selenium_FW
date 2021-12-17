@@ -1,0 +1,62 @@
+package Pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class AmazonLogin {
+
+	//Web Elements and methods
+	WebDriver driver;
+	
+	//Initialize all the webElements
+	public AmazonLogin(WebDriver driver) 
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	//Find all the elements and keep it here
+	@FindBy(className ="nav-line-1-container")
+	WebElement signInBtn;
+	
+	//Action
+	public void signInBtn() {
+		signInBtn.click();	
+	}
+	@FindBy(id ="ap_email")
+	WebElement email;
+	
+	//Action
+	public void emailadd(String emailadd) {
+		email.sendKeys(emailadd);
+	}
+
+	
+	@FindBy(id ="continue")
+	WebElement continueBtn;
+	
+	//Action
+	public void continueBtn() {
+		continueBtn.click();
+	}
+	
+	@FindBy(id ="ap_password")
+	WebElement password;
+	
+	//Action
+	public void enterPassword(String enterPassword) {
+		password.sendKeys(enterPassword);
+	}
+	
+	@FindBy(id ="signInSubmit")
+	WebElement signInSubmit;
+	
+	//Action
+	public void signInSubmit() {
+		signInSubmit.click();
+	}
+	
+	//Perform all the actions by using setter methods
+}

@@ -1,0 +1,30 @@
+package temp;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+public class firsttestngfile {
+	
+    
+    System.setProperty("webdriver.chrome.driver","drivers/chromedriver");		
+    driver=new ChromeDriver();
+    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    System.out.println("The setup process is completed");
+     
+  @Test
+  public void verifyHomepageTitle() {
+       
+      System.out.println("launching firefox browser"); 
+      System.setProperty("webdriver.gecko.driver", driverPath);
+      driver = new FirefoxDriver();
+      driver.get(baseUrl);
+      String expectedTitle = "Welcome: Mercury Tours";
+      String actualTitle = driver.getTitle();
+      Assert.assertEquals(actualTitle, expectedTitle);
+      driver.close();
+  }
+}

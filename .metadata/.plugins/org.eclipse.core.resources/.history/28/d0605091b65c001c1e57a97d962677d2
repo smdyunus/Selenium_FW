@@ -1,0 +1,121 @@
+package TestCases;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+public class ParallelTest {
+	@Test
+	  public void AmazonLogin() //1
+	  {
+		  System.setProperty("webdriver.chrome.driver","drivers/chromedriver");		
+			ChromeDriver driver = new ChromeDriver();
+			String baseUrl = "https://www.amazon.in/";	
+			driver.get(baseUrl);
+			System.out.println(driver.getTitle());
+			driver.quit();	
+	  }
+	@Test
+	 public void Amazonregistration()//2 
+	  {
+		  System.setProperty("webdriver.chrome.driver","drivers/chromedriver");		
+			ChromeDriver driver = new ChromeDriver();
+			String baseUrl = "https://www.amazon.in/";	
+			driver.get(baseUrl);
+			System.out.println(driver.getTitle());
+			driver.quit();	
+
+	  }
+	@Test
+	public void ChangePWD() //3
+			  {
+				  System.setProperty("webdriver.chrome.driver","drivers/chromedriver");		
+					ChromeDriver driver = new ChromeDriver();
+					String baseUrl = "https://www.amazon.in/";	
+					driver.get(baseUrl);
+					System.out.println(driver.getTitle());
+					driver.quit();	
+			  }
+	@Test
+		public void ForgotPwd()//4 
+			  {
+				  System.setProperty("webdriver.chrome.driver","drivers/chromedriver");		
+					ChromeDriver driver = new ChromeDriver();
+					String baseUrl = "https://www.amazon.in/";	
+					driver.get(baseUrl);
+					System.out.println(driver.getTitle());
+					driver.quit();	
+			  }
+	@Test(dependsOnMethods = "AmazonLogin")
+	 public void HomePage() //5
+	  {
+		  System.setProperty("webdriver.chrome.driver","drivers/chromedriver");		
+			ChromeDriver driver = new ChromeDriver();
+			String baseUrl = "https://www.amazon.in/";	
+			driver.get(baseUrl);
+			System.out.println(driver.getTitle());
+			driver.quit();	
+	  }
+	
+	@Test
+	 public void PaymentPage() //6
+	  {
+		  System.setProperty("webdriver.gecko.driver","drivers/geckodriver");		
+			FirefoxDriver driver = new FirefoxDriver();
+		 
+			String baseUrl = "https://www.amazon.in/";	
+			driver.get(baseUrl);
+			System.out.println(driver.getTitle());
+			driver.quit();	
+	  }
+	
+	@Test
+	 public void cartList() //7
+	  {
+		  System.setProperty("webdriver.gecko.driver","drivers/geckodriver");		
+			FirefoxDriver driver = new FirefoxDriver();
+		 
+			String baseUrl = "https://www.amazon.in/";	
+			driver.get(baseUrl);
+			System.out.println(driver.getTitle());
+			driver.quit();	
+	  }
+	@Test
+	 public void MyOrders() //8
+	  {
+		  System.setProperty("webdriver.gecko.driver","drivers/geckodriver");		
+			FirefoxDriver driver = new FirefoxDriver();
+		 
+			String baseUrl = "https://www.amazon.in/";	
+			driver.get(baseUrl);
+			System.out.println(driver.getTitle());
+			driver.quit();	
+	  }
+	
+	
+}
+
+// if you 1000, in 1 Hr but it will take 5Hrs ? how to handle ?
+// Parallel, use no of Thread count = 10
+
+// if using parallel, if any tc is dependant on aonther Tc1?
+
+
+//Login
+//Home
+
+//goToCart
+//CartList
+
+//Alphabetical
+
+
+
+
+
+
+

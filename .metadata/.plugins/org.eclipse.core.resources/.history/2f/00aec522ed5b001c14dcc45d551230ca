@@ -1,0 +1,28 @@
+package temp;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+public class firsttestngfile {
+	
+    public String baseUrl = "http://demo.guru99.com/test/newtours/";
+    String driverPath = "drivers/chromedriver";
+    public WebDriver driver ; 
+     
+  @Test
+  public void test1() {
+       
+      System.out.println("This is a Test1"); 
+     
+  }
+  
+  @Test
+  public void test2() {
+       
+      System.out.println("This is a Test2"); 
+
+  }
+}
